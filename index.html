@@ -4,25 +4,38 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Slick Whips Mobile Detailing — Waco, TX</title>
-<meta name="description" content="Mobile car detailing in Waco, Woodway, Hewitt, Robinson and China Spring. Pick a service, build your estimate, book by call or text.">
-<meta name="theme-color" content="#08080a">
+<meta name="description" content="Mobile car detailing that comes to your driveway in Waco, Woodway, Hewitt, Robinson and China Spring. Pick a service, build your estimate, book by call or text.">
+<meta name="theme-color" content="#0a1f2b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+<div class="intro" id="intro" aria-hidden="true">
+  <span class="ip ip-top"></span>
+  <span class="ip ip-bot"></span>
+  <div class="intro-core">
+    <span class="intro-mark">SW</span>
+    <span class="intro-name">Slick Whips Detailing</span>
+    <span class="intro-bar"><i></i></span>
+    <span class="intro-sub">Waco · Woodway · Hewitt</span>
+  </div>
+</div>
 <div class="grain"></div>
 
 <header class="top">
   <div class="wrap top-in">
-    <a class="brand" href="#top"><i></i>Slick Whips <small>Waco, TX</small></a>
+    <a class="brand" href="#top"><span class="mark">SW</span> Slick Whips <small>Waco, TX</small></a>
+    <nav class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#prices">Prices</a>
+      <a href="#hours">Hours</a>
+    </nav>
     <div class="top-actions">
-      <a class="btn btn-ghost hide-sm" href="tel:+12545235773">+1 254-523-5773</a>
-      <button class="btn btn-acid cart-pill" id="openEstimate" type="button" aria-label="Open your estimate">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-        Estimate
-        <span class="cart-count" id="cartCount">0</span>
+      <a class="btn btn-line hide-sm" href="tel:+12545235773">+1 254-523-5773</a>
+      <button class="btn btn-ink cart-pill" id="openEstimate" type="button">
+        Estimate <span class="cart-count" id="cartCount">0</span>
       </button>
     </div>
   </div>
@@ -30,74 +43,73 @@
 
 <main id="top">
   <section class="hero">
-    <div class="wrap hero-in">
-      <div>
-        <div class="eyebrow"><i></i>Mobile detailing · we come to you</div>
-        <h1>Your driveway is the <span class="hl">detailing bay</span> now.</h1>
-        <p class="lede" style="margin-top:16px">We roll up with our own spot-free water and power. Tap a service below, build your estimate in seconds, then book by call or text — no shop queue, no keys leaving your street.</p>
-      </div>
-      <div class="hero-aside" style="margin-top:6px">
-        <div class="rating">
-          <div>
-            <b>5.0</b>
-            <div class="stars" aria-hidden="true">★★★★★</div>
-          </div>
-          <div>
-            <span><strong style="color:#fff">97 Google reviews</strong></span>
-            <span>Waco, Woodway, Hewitt, Robinson &amp; China Spring</span>
-          </div>
-        </div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>MOBILE</span> Waco · Woodway · Hewitt</p>
+        <h1>The car looks new.<br><em>In your own driveway.</em></h1>
+        <p class="lede">We roll up with our own spot-free water and power, so nothing gets borrowed from your house. Tap a service, build the estimate as you go, then book by call or text.</p>
         <div class="hero-cta">
-          <a class="btn btn-acid" href="#gallery">Browse the gallery</a>
-          <a class="btn btn-ghost" href="sms:+12545235773">Text a photo</a>
+          <a class="btn btn-blue" href="tel:+12545235773">Book a detail</a>
+          <a class="btn btn-line" href="sms:+12545235773">Text a photo</a>
+        </div>
+        <div class="ratecard">
+          <span class="score">5.0</span>
+          <div>
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <b>97 Google reviews</b>
+            <small>Waco · Woodway · Hewitt · Robinson</small>
+          </div>
         </div>
       </div>
+
+      <figure class="hero-art">
+        <span class="sticker">We come to you</span>
+        <img src="https://images.unsplash.com/photo-1694678505383-676d78ea3b96?auto=format&fit=crop&w=1000&q=75" alt="Car covered in foam during a mobile wash" onerror="this.style.visibility='hidden'">
+        <figcaption>Tue–Sat · 8:00 AM – 6:00 PM CST</figcaption>
+      </figure>
     </div>
   </section>
 
-  <section class="gal wrap" id="gallery">
-    <div class="gal-head">
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-in" id="strip"></div>
+  </div>
+
+  <section class="gal wrap" id="services">
+    <div class="gal-top">
       <div>
+        <p class="index">(01) Services</p>
         <h2>The wall</h2>
-        <p>Drag it, use the arrows, or click the card in the middle.</p>
       </div>
       <div class="pills" id="cats" role="group" aria-label="Filter services"></div>
     </div>
+    <p class="gal-hint">Drag the wall, use the arrows, or tap the card in the middle.</p>
 
     <div class="stage-wrap">
-      <div class="stage" id="stage" aria-label="Service gallery" role="group"></div>
+      <div class="stage" id="stage" role="group" aria-label="Service gallery"></div>
     </div>
 
-    <div class="gal-ctl">
-      <button class="ctl" id="prev" type="button" aria-label="Previous service">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
-      </button>
+    <div class="ctl-row">
+      <button class="ctl" id="prev" type="button" aria-label="Previous service">←</button>
       <div class="dots" id="dots"></div>
-      <button class="ctl" id="next" type="button" aria-label="Next service">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-      </button>
+      <button class="ctl" id="next" type="button" aria-label="Next service">→</button>
     </div>
-    <p class="hint" id="hint">Swipe or drag to turn the wall</p>
   </section>
 
   <section class="detail wrap" id="detail">
-    <button class="back" id="backBtn" type="button">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
-      Back to 3D gallery
-    </button>
-
+    <button class="back" id="backBtn" type="button">← Back to the wall</button>
     <div class="cfg">
       <div class="cfg-media">
-        <span class="tagpill" id="cfgCat">Service</span>
         <img id="cfgImg" src="" alt="">
+        <span class="cfg-tag" id="cfgCat">Service</span>
       </div>
       <div class="cfg-body">
+        <p class="index" id="cfgIndex">(01)</p>
         <h2 id="cfgName">Service</h2>
-        <div class="cfg-meta">
-          <span class="chip" id="cfgTime">≈ 2 hrs on site</span>
-          <span class="chip" id="cfgTown">Waco &amp; around</span>
-        </div>
         <p class="cfg-desc" id="cfgDesc"></p>
+        <div class="cfg-facts">
+          <span id="cfgTime">≈ 2 hrs on site</span>
+          <span id="cfgTown">Waco, TX</span>
+        </div>
 
         <div class="opt-group">
           <h4>Vehicle size</h4>
@@ -108,64 +120,87 @@
           <div class="opt-row" id="optCond"></div>
         </div>
         <div class="opt-group">
-          <h4>Scheduling</h4>
+          <h4>When</h4>
           <div class="opt-row" id="optSched"></div>
         </div>
 
         <div class="buy">
-          <div class="live-price" id="livePrice">$0<small>your estimate</small></div>
-          <button class="btn btn-acid" id="addBtn" type="button">Add to estimate</button>
+          <div class="price"><span>Live estimate</span><b id="livePrice">$0</b></div>
+          <button class="btn btn-blue" id="addBtn" type="button">Add to estimate</button>
         </div>
       </div>
     </div>
 
     <div class="more">
-      <h3>Explore more</h3>
+      <p class="index">(02) Keep looking</p>
       <div class="more-grid" id="moreGrid"></div>
     </div>
   </section>
 
-  <div class="strip" aria-hidden="true">
-    <div class="strip-in" id="strip"></div>
-  </div>
+  <section class="menu" id="prices">
+    <div class="wrap">
+      <p class="index">(03) Price list</p>
+      <h2>Flat prices, printed plainly.</h2>
+      <p class="menu-lede">What you see is the base price. Vehicle size, condition and timing adjust it live in the configurator, so there is no surprise on the day.</p>
+      <ul class="pricelist" id="pricelist"></ul>
+      <div class="menu-cta">
+        <a class="btn btn-blue" href="tel:+12545235773">Call the shop</a>
+        <button class="btn btn-line" id="openEstimate2" type="button">Open my estimate</button>
+      </div>
+    </div>
+  </section>
 
-  <section class="light">
-    <div class="wrap sec">
-      <div class="kicker">How it works</div>
-      <h2>Three taps, then we're on your street.</h2>
-      <p class="lede">Most detailing means losing half a day. Ours means opening your front door.</p>
-      <div class="three">
-        <div class="box"><div class="n">01</div><h3>Pick your service</h3><p>Choose the detail that fits, set your vehicle size, and the estimate updates as you tap.</p></div>
-        <div class="box"><div class="n">02</div><h3>Send the estimate</h3><p>Tap the estimate button, then call or text us the list. We confirm a slot, usually same week.</p></div>
-        <div class="box"><div class="n">03</div><h3>Stay inside</h3><p>We bring water, power and gear. Your car gets finished in your driveway and the keys stay with you.</p></div>
+  <section class="steps-sec">
+    <div class="wrap">
+      <p class="index">(04) How a detail runs</p>
+      <div class="steps">
+        <article class="step">
+          <span class="num">01</span>
+          <h3>Pick the detail</h3>
+          <p>Choose the service that fits the car, set the size and condition, and watch the estimate move as you tap.</p>
+        </article>
+        <article class="step">
+          <span class="num">02</span>
+          <h3>Send us the list</h3>
+          <p>Call or text the estimate over. We confirm a slot, usually inside the same week, and tell you what we need access to.</p>
+        </article>
+        <article class="step">
+          <span class="num">03</span>
+          <h3>Stay inside</h3>
+          <p>Water, power and gear all arrive with us. The car gets finished on your street and the keys never leave your driveway.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-sec" id="hours">
+    <div class="wrap info-grid">
+      <div class="panel">
+        <p class="index">(05) Hours</p>
+        <ul class="hours" id="hoursList">
+          <li data-day="Mon" class="off"><span>Monday</span><span>Closed</span></li>
+          <li data-day="Tue"><span>Tuesday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Wed"><span>Wednesday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Thu"><span>Thursday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Fri"><span>Friday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Sat"><span>Saturday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Sun" class="off"><span>Sunday</span><span>Closed</span></li>
+        </ul>
+        <p class="tiny">Central time. Booking runs by call or text, and the last detail of the day starts at 4:00 PM.</p>
       </div>
 
-      <div class="info">
-        <div class="info-card">
-          <h3>Hours</h3>
-          <ul class="hours" id="hoursList">
-            <li data-day="Mon" class="off"><span>Monday</span><span>Closed</span></li>
-            <li data-day="Tue"><span>Tuesday</span><span>8:00 AM – 6:00 PM</span></li>
-            <li data-day="Wed"><span>Wednesday</span><span>8:00 AM – 6:00 PM</span></li>
-            <li data-day="Thu"><span>Thursday</span><span>8:00 AM – 6:00 PM</span></li>
-            <li data-day="Fri"><span>Friday</span><span>8:00 AM – 6:00 PM</span></li>
-            <li data-day="Sat"><span>Saturday</span><span>8:00 AM – 6:00 PM</span></li>
-            <li data-day="Sun" class="off"><span>Sunday</span><span>Closed</span></li>
-          </ul>
-          <p style="margin:10px 0 0;font-size:.78rem;color:rgba(8,8,10,.45)">Central time · booking by call or text</p>
+      <div class="panel">
+        <p class="index">(06) Where we drive</p>
+        <div class="chips">
+          <span>Waco</span><span>Woodway</span><span>Hewitt</span><span>Robinson</span><span>China Spring</span>
         </div>
-        <div class="info-card">
-          <h3>Where we work</h3>
-          <div class="chips2">
-            <span class="chip2">Waco</span><span class="chip2">Woodway</span><span class="chip2">Hewitt</span><span class="chip2">Robinson</span><span class="chip2">China Spring</span>
-          </div>
-          <h3 style="margin-top:16px">What customers mention</h3>
-          <ul class="mentions">
-            <li>Spotless inside-and-out work across Waco, Woodway &amp; Hewitt</li>
-            <li>Self-contained water and power — nothing borrowed from your house</li>
-            <li>Showroom paint gloss, no upsell</li>
-          </ul>
-        </div>
+        <p class="index" style="margin-top:26px">(07) Review highlights</p>
+        <ul class="quotes">
+          <li>Spotless inside-and-out work across Waco, Woodway and Hewitt.</li>
+          <li>Self-contained water and power — nothing borrowed from your house.</li>
+          <li>Showroom paint gloss, and no upsell on the day.</li>
+        </ul>
+        <a class="btn btn-ink" href="tel:+12545235773" style="margin-top:20px">Call +1 254-523-5773</a>
       </div>
     </div>
   </section>
@@ -173,10 +208,10 @@
   <footer>
     <div class="wrap foot">
       <div>
-        <div class="brand"><i></i>Slick Whips <small>Waco, TX</small></div>
-        <p style="margin-top:10px">Mobile car detailing serving Waco, Woodway, Hewitt, Robinson and China Spring. Own spot-free water and power on board.</p>
+        <a class="brand" href="#top"><span class="mark">SW</span> Slick Whips <small>Waco, TX</small></a>
+        <p>Mobile car detailing serving Waco, Woodway, Hewitt, Robinson and China Spring. Own spot-free water and power on board.</p>
       </div>
-      <div style="display:grid;gap:5px">
+      <div class="foot-right">
         <a href="tel:+12545235773">+1 254-523-5773</a>
         <small>Tue–Sat · 8:00 AM – 6:00 PM CST</small>
         <small>© <span id="yr">2026</span> Slick Whips Mobile Detailing</small>
@@ -189,24 +224,22 @@
 <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Your estimate">
   <div class="drawer-top">
     <h3>Your estimate</h3>
-    <button class="x" id="closeDrawer" type="button" aria-label="Close estimate">✕</button>
+    <button class="x" id="closeDrawer" type="button" aria-label="Close">✕</button>
   </div>
   <div class="drawer-body" id="drawerBody"></div>
   <div class="drawer-foot">
     <div class="total"><span>Estimated total</span><b id="total">$0</b></div>
-    <a class="btn btn-acid btn-block" id="callBtn" href="tel:+12545235773">Call to book · +1 254-523-5773</a>
-    <a class="btn btn-ghost btn-block" id="textBtn" href="sms:+12545235773">Text this estimate</a>
-    <p class="finePrint">Estimate only — final price confirmed once we see the vehicle. We bring our own water and power, so nothing is needed from your property.</p>
+    <a class="btn btn-blue btn-block" id="callBtn" href="tel:+12545235773">Call to book · +1 254-523-5773</a>
+    <a class="btn btn-line btn-block" id="textBtn" href="sms:+12545235773">Text this estimate</a>
+    <p class="fine">Estimate only. Final price is confirmed once we see the vehicle. We bring our own water and power.</p>
   </div>
 </aside>
 
 <div class="toast" id="toast">Added to your estimate</div>
 
 <div class="mbar">
-  <a class="btn btn-acid" href="tel:+12545235773">Call</a>
-  <button class="btn btn-ghost cart-pill" id="openEstimate2" type="button">
-    Estimate <span class="cart-count" id="cartCount2">0</span>
-  </button>
+  <a class="btn btn-blue" href="tel:+12545235773">Call</a>
+  <button class="btn btn-ink cart-pill" id="openEstimate3" type="button">Estimate <span class="cart-count" id="cartCount2">0</span></button>
 </div>
 
 <script src="/app.js" defer></script>
